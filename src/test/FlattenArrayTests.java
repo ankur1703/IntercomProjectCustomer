@@ -18,7 +18,7 @@ public class FlattenArrayTests {
 	@Test
 	public void testEmptyArrayReturnedEmptyArray() {
 		arrayToFlat = new ArrayList<Object>();
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertTrue(flattenedArray.isEmpty());
 	}
 
@@ -30,7 +30,7 @@ public class FlattenArrayTests {
 		expectedArray = new ArrayList<Integer>();
 		expectedArray.add(4);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -52,7 +52,7 @@ public class FlattenArrayTests {
 		expectedArray.add(199);
 		expectedArray.add(77);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -68,7 +68,7 @@ public class FlattenArrayTests {
 		expectedArray = new ArrayList<Integer>();
 		expectedArray.add(6);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -84,7 +84,7 @@ public class FlattenArrayTests {
 		expectedArray = new ArrayList<Integer>();
 		expectedArray.add(6);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -108,7 +108,7 @@ public class FlattenArrayTests {
 		expectedArray.add(199);
 		expectedArray.add(77);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -133,7 +133,7 @@ public class FlattenArrayTests {
 		expectedArray.add(199);
 		expectedArray.add(77);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -159,7 +159,7 @@ public class FlattenArrayTests {
 		expectedArray.add(77);
 		expectedArray.add(-86);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 	
@@ -189,7 +189,7 @@ public class FlattenArrayTests {
 		expectedArray.add(77);
 		expectedArray.add(-86);
 		
-		flattenedArray =  flattenArray.flatArray(arrayToFlat);
+		flattenedArray =  flattenArray.flatToArrayListOfIntegersFrom(arrayToFlat);
 		assertEquals(expectedArray , flattenedArray);
 	}
 }

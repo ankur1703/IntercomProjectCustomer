@@ -9,14 +9,14 @@ public class FlattenArray {
 		flattenedArray = new ArrayList<Integer>();
 	}
 	
-	public ArrayList<Integer> flatArray(ArrayList<Object> arrayToFlat) {
+	public ArrayList<Integer> flatToArrayListOfIntegersFrom(ArrayList<Object> arrayToFlat) {
 		if(arrayToFlat.isEmpty()){
 			return new ArrayList<Integer>();
 		}
 		
 		for(Object element: arrayToFlat){
 			if(element instanceof ArrayList){
-				flatArray((ArrayList<Object>)element);
+				flatToArrayListOfIntegersFrom((ArrayList<Object>)element);
 			}
 			else if(element instanceof Integer){
 				flattenedArray.add((Integer)element);
