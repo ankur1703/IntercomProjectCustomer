@@ -4,7 +4,7 @@
  * This class saves the customer information such as name , user_id, latitude and longitude
  */
 
-package MainPackage;
+package DistanceMeasurementUsingCustomerData;
 
 public class Customer implements Comparable<Customer> { // implements Comparable interface to be able to compare two customer objects
 	private String name;	// name field
@@ -13,23 +13,19 @@ public class Customer implements Comparable<Customer> { // implements Comparable
 	private double longitude; // longitude field
 	
 	// Customer constructor  
-	Customer(int user_id, String name, double latitude, double longitude) {
+	public Customer(int user_id, String name, double latitude, double longitude) {
 		this.name = name;
 		this.user_id = user_id;
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
 	
-	
-
 	/**
 	 * @return the name
 	 */
 	public String getName() {
 		return name;
 	}
-
-
 
 	/**
 	 * @return the user_id
@@ -38,8 +34,6 @@ public class Customer implements Comparable<Customer> { // implements Comparable
 		return user_id;
 	}
 
-
-
 	/**
 	 * @return the latitude
 	 */
@@ -47,15 +41,12 @@ public class Customer implements Comparable<Customer> { // implements Comparable
 		return latitude;
 	}
 
-
-
 	/**
 	 * @return the longitude
 	 */
 	public double getLongitude() {
 		return longitude;
 	}
-
 
 	/**
 	 * compareTo methods compares the user_id of both customers
